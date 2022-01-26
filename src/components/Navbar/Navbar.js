@@ -7,6 +7,7 @@ const Nav = styled.nav`
     min-height: 20%;
     width: 100%;
     flex-shrink:0;
+    flex-grow:0;
     display: flex;
     flex-direction:column;
     align-items: center;

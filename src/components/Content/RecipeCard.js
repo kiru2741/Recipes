@@ -53,8 +53,8 @@ const StyledRecipeCard = styled.div`
 
 const RecipeCard = () => {
 
-  const [currentRecipe, setCurrentRecipe] = useContext(RecipeContext)
-  const [deviceWidth, setDeviceWidth] = useContext(DeviceWidthContext)
+  const [currentRecipe] = useContext(RecipeContext)
+  const [deviceWidth] = useContext(DeviceWidthContext)
   const [sideBar, setSideBar] = useContext(SideBarContext)
   const breakPoint = useContext(BreakPointContext)
 

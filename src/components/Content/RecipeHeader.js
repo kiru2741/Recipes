@@ -5,7 +5,7 @@ const StyledRecipeHeader = styled.div`
     width:100%;
     height:50%;
     background-image: linear-gradient(120deg, #f6d46560 0%, #fda08560 100%), url(${props => props.bgImg});
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -18,7 +18,7 @@ const StyledRecipeHeader = styled.div`
         left:0;
         background-image: linear-gradient(120deg, #f6d465 0%, #fda085 100%);
         color: white;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 700;
         padding: .5rem;
     }

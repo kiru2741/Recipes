@@ -74,11 +74,11 @@ const Side = styled.div`
 
 const Sidebar = () => {
 
-    const [recipes, setRecipes] = useContext(RecipesContext)
-    const [deviceWidth, setDeviceWidth] = useContext(DeviceWidthContext)
+    const [recipes] = useContext(RecipesContext)
+    const [deviceWidth] = useContext(DeviceWidthContext)
     const breakPoint = useContext(BreakPointContext)
-    const [spinner, setSpinner] = useContext(SpinnerContext)
-    const [err,setErr] = useContext(ErrMessageContext)
+    const [spinner] = useContext(SpinnerContext)
+    const [err] = useContext(ErrMessageContext)
     
     if(!recipes) return null
 

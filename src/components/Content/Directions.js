@@ -50,7 +50,7 @@ const Directions = ({currentRecipe}) => {
         <StyledDirections>
             <Header>How to cook it</Header>
             <Content>This recipe was carefully designed and tested by <span>{currentRecipe.recipe.source}</span>. Please check out directions at their website.</Content>
-            <a href={currentRecipe.recipe.url} target='_blank'>Directions<i className='fas fa-arrow-right'></i></a>
+            <a href={currentRecipe.recipe.url} rel="noreferrer" target='_blank'>Directions<i className='fas fa-arrow-right'></i></a>
         </StyledDirections>
     );
 };

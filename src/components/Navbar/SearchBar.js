@@ -48,10 +48,10 @@ const SearchBar = () => {
 
     const recipeNameRef = useRef()
     const APIInfo = useContext(APIContext)
-    const [recipes, setRecipes] = useContext(RecipesContext)
-    const [sideBar, setSideBar] = useContext(SideBarContext)
-    const [spinner, setSpinner] = useContext(SpinnerContext)
-    const [err, setErr] = useContext(ErrMessageContext)
+    const [ , setRecipes] = useContext(RecipesContext)
+    const [ , setSideBar] = useContext(SideBarContext)
+    const [ , setSpinner] = useContext(SpinnerContext)
+    const [ , setErr] = useContext(ErrMessageContext)
 
     function handleSubmit(){
         const recipeName = recipeNameRef.current.value;

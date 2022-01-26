@@ -29,7 +29,7 @@ const ThumbNail = styled.div`
     border-radius: 50%;
     background-image: url(${props => props.bgImg}), linear-gradient(120deg, #f6d36560 0%, #fda08560 100%);
     background-size:cover;
-    background-position:center;
+    background-position:center center;
     background-repeat: no-repeat;
 `;
 
@@ -44,7 +44,7 @@ const Label = styled.p`
 
 const RecipeLink = ({recipe}) => {
 
-    const [currentRecipe, setCurrentRecipe] = useContext(RecipeContext)
+    const [ , setCurrentRecipe] = useContext(RecipeContext)
     const [sideBar, setSideBar] = useContext(SideBarContext)
 
     function viewRecipe(recipe){

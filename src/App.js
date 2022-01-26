@@ -18,13 +18,13 @@ const StyledContainer = styled.div`
   flex-direction: column;
 
   @media (max-width:${props => props.breakPoint}px){
-    padding: 0 20px;
+    padding: 0 10px;
   }
 `;
 
 function App() {
 
-  const [sideBar, setSideBar] = useContext(SideBarContext)
+  const [sideBar] = useContext(SideBarContext)
   const [deviceWidth, setDeviceWidth] = useContext(DeviceWidthContext)
   const breakPoint = useContext(BreakPointContext)
 
